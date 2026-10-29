@@ -39,6 +39,59 @@ footer{padding:40px 0 95px;color:#aaa18f}.foot{display:flex;justify-content:spac
 @media(max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quickgrid{grid-template-columns:repeat(2,1fr)}.quick:nth-child(2){border-right:0}.quick:nth-child(-n+2){border-bottom:1px solid #e5ddce}.photo{height:225px}.nav{gap:15px}}
 @media(max-width:680px){.wrap{width:calc(100% - 32px)}.topline{font-size:.65rem}.head{min-height:67px}.brand{font-size:.69rem}.nav a:not(.cta){display:none}.nav .cta{padding:10px 12px;font-size:.75rem}.hero{min-height:610px;padding:76px 0 82px}.hero:after{background:linear-gradient(90deg,#0c0c0be8,#0c0c0b66),linear-gradient(0deg,var(--bg),transparent 40%)}.hero h1{font-size:clamp(3.4rem,15vw,5.5rem)}.lead{font-size:1rem}.btn{padding:12px 15px}.quickbar{margin-top:-23px}.quick{padding:14px 10px;gap:9px}.qicon{width:36px;height:36px;font-size:1rem}.quick strong{font-size:.79rem}.quick small{font-size:.68rem}.section{padding:68px 0}.section-head{display:block}.section h2{font-size:clamp(2.5rem,12vw,3.8rem)}.intro{font-size:.92rem}.filters{flex-wrap:nowrap;overflow-x:auto;padding:3px 2px 10px;margin-top:22px}.filter{white-space:nowrap}.grid{gap:10px}.photo{height:150px}.card-body{padding:12px}.card h3{font-size:1.05rem}.card p{font-size:.76rem;min-height:55px}.tag{font-size:.56rem;left:7px;top:7px}.feature{grid-template-columns:1fr}.feature-media,.feature-media img{min-height:280px}.feature-copy{padding:34px 23px 42px}.feature h2{font-size:2.8rem}.gather-inner{display:block}.gather-inner .btn{margin-top:22px}.visit{padding:66px 0}.visit-grid{grid-template-columns:1fr;gap:20px}.visit h2{font-size:3rem}.visit-card{padding:17px}.map-preview{height:175px}.footmeta{text-align:left}.mobilebar{display:grid;position:fixed;bottom:0;left:0;right:0;z-index:20;grid-template-columns:1fr 1fr;gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:#11110ff2;backdrop-filter:blur(14px);border-top:1px solid #d8ad3255}.mobilebar .btn{padding:11px;font-size:.75rem}.mobilebar .btn:not(.primary){border-color:#ffffff33}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Editorial refinement: less template-like, more considered retail identity */
+:root{color-scheme:light;--bg:#f5f1e8;--panel:#fffdf8;--gold:#b48b2b;--pale:#d9b65d;--cream:#211f19;--muted:#706b60;--ink:#211f19}
+body{background:var(--bg);color:var(--cream)}
+.topline{background:#211f19;color:#e7cb83;letter-spacing:.13em;padding:9px 12px}
+header{background:#f8f5eeF2;border-bottom:1px solid #d8d0c1;backdrop-filter:blur(12px)}
+.brand{color:#211f19;letter-spacing:.14em}
+.nav a{color:#3b382f}
+.nav .cta{background:#211f19;color:#f7f1e5;border-radius:2px;padding:12px 17px}
+.hero{min-height:610px;padding:74px 0 100px;background:#29271f}
+.hero:before{background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=85');filter:saturate(.55)}
+.hero:after{background:linear-gradient(90deg,rgba(20,19,16,.9) 0%,rgba(20,19,16,.72) 47%,rgba(20,19,16,.15) 100%),linear-gradient(0deg,#29271f55,transparent 30%)}
+.hero h1{font-size:clamp(3.4rem,7vw,6.1rem);letter-spacing:-.045em;max-width:680px}
+.hero h1 em{font-style:normal;color:#dfbf6b}
+.eyebrow{letter-spacing:.14em}
+.btn{border-radius:2px;letter-spacing:.015em}
+.primary{background:#c4a04a;border-color:#c4a04a;color:#201b10}
+.quickgrid{border-radius:2px;box-shadow:0 10px 28px #2b24130d;border:1px solid #ded5c5}
+.quick{padding:22px 18px}
+.qicon{border-radius:2px;background:transparent;border:1px solid #c4a04a;color:#8b6a20;font:700 .75rem Figtree,Arial,sans-serif}
+.section{padding:82px 0}
+.section h2{font-size:clamp(2.5rem,4.8vw,4.1rem)}
+.section-head{align-items:end}
+.intro{line-height:1.8}
+.filters{gap:7px}
+.filter{border-radius:2px;border-color:#cfc6b6;color:#4c473d}
+.filter:hover,.filter[aria-pressed=true]{background:#24221c;color:#f5f1e8;border-color:#24221c}
+.grid{gap:18px}
+.card{background:#fffdf8;border:1px solid #e2dbcf;border-radius:2px;color:#28251e}
+.card:hover{transform:translateY(-2px);border-color:#c4a04a}
+.photo{height:190px;filter:saturate(.72)}
+.tag{border-radius:1px;background:#24221ce8;color:#e9d39a;letter-spacing:.09em}
+.card-body{padding:20px}
+.card h3{font-size:1.24rem}
+.card p{color:#716b5f}
+.card-link,.card summary{color:#8b6a20}
+.feature{background:#e9e0ce}
+.feature-media,.feature-media img{min-height:430px}
+.feature-copy{padding:clamp(34px,5vw,68px)}
+.feature h2{font-size:clamp(2.5rem,4.6vw,4rem)}
+.gather{background:#24231e;padding:62px 0}
+.gather h2{font-size:clamp(2.2rem,4vw,3.4rem)}
+.visit{background:#f5f1e8}
+.visit-card{border-radius:2px;background:#e9e0ce}
+.map-preview{border-radius:2px}
+.map-pin{border-radius:2px}
+footer{background:#211f19;color:#c7bfae;padding-bottom:45px}
+.footbrand{letter-spacing:.14em}
+.footmeta{line-height:1.9}
+.mobilebar{background:#f8f5eef5;border-top:1px solid #d8d0c1}
+.mobilebar .btn:not(.primary){border-color:#cfc6b6;color:#28251e}
+@media(max-width:680px){.hero{min-height:570px}.hero h1{font-size:clamp(3.2rem,13vw,4.8rem)}.quick{padding:13px 10px}.section{padding:62px 0}.grid{gap:10px}.photo{height:140px}.card-body{padding:13px}.feature-media,.feature-media img{min-height:260px}}
+
 </style>
 </head>
 <body>
@@ -46,7 +99,7 @@ footer{padding:40px 0 95px;color:#aaa18f}.foot{display:flex;justify-content:spac
 <header><div class="wrap head"><a class="brand" href="#top" aria-label="First Class Hub home"><img class="brand-logo" src="/assets/first-class-logo.jpeg" alt="First Class Hub official logo" width="48" height="48" onerror="this.hidden=true"><span>FIRST CLASS HUB</span></a><nav class="nav" aria-label="Main navigation"><a href="#experiences">Explore</a><a href="#bakery">Bakery</a><a href="#visit">Find us</a><a class="cta" href="#visit">Plan your visit ↗</a></nav></div></header>
 <main id="top">
 <section class="hero"><div class="wrap hero-content"><div class="eyebrow">A little more joy in your everyday</div><h1 class="serif">Come for the<br><em>good things.</em></h1><p class="lead">Fresh favourites, food worth sharing, everyday essentials and a welcoming space to gather — all at First Class Hub in Kaduna.</p><div class="actions"><a class="btn primary" href="#experiences">Explore what’s here ↗</a><a class="btn" href="#visit">Get directions →</a></div><div class="hero-note">No. 10 Rahma Road · Kaduna, Kaduna State</div></div></section>
-<section class="quickbar wrap" aria-label="Explore by interest"><div class="quickgrid"><a class="quick" href="#experiences" data-jump-filter="food"><span class="qicon" aria-hidden="true">🍗</span><span><strong>Food & grill</strong><small>Something delicious</small></span></a><a class="quick" href="#bakery"><span class="qicon" aria-hidden="true">🥐</span><span><strong>Fresh bakery</strong><small>Warm from the oven</small></span></a><a class="quick" href="#experiences" data-jump-filter="essentials"><span class="qicon" aria-hidden="true">🛍️</span><span><strong>Everyday essentials</strong><small>Little things made easy</small></span></a><a class="quick" href="#gather"><span class="qicon" aria-hidden="true">✨</span><span><strong>Gather & celebrate</strong><small>Make it a moment</small></span></a></div></section>
+<section class="quickbar wrap" aria-label="Explore by interest"><div class="quickgrid"><a class="quick" href="#experiences" data-jump-filter="food"><span class="qicon" aria-hidden="true">01</span><span><strong>Food & grill</strong><small>Something delicious</small></span></a><a class="quick" href="#bakery"><span class="qicon" aria-hidden="true">02</span><span><strong>Fresh bakery</strong><small>Warm from the oven</small></span></a><a class="quick" href="#experiences" data-jump-filter="essentials"><span class="qicon" aria-hidden="true">03</span><span><strong>Everyday essentials</strong><small>Little things made easy</small></span></a><a class="quick" href="#gather"><span class="qicon" aria-hidden="true">04</span><span><strong>Gather & celebrate</strong><small>Make it a moment</small></span></a></div></section>
 <section class="section" id="experiences"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Find your kind of first class</div><h2 class="serif">What are you<br>in the mood for?</h2></div><p class="intro">Explore the food, bakery and everyday essentials listed by the business. Use the categories to find what you came for.</p></div><div class="filters" role="group" aria-label="Filter experiences"><button class="filter" type="button" data-filter="all" aria-pressed="true">Everything</button><button class="filter" type="button" data-filter="food" aria-pressed="false">Food & grill</button><button class="filter" type="button" data-filter="bakery" aria-pressed="false">Bakery</button><button class="filter" type="button" data-filter="essentials" aria-pressed="false">Home & essentials</button><button class="filter" type="button" data-filter="gather" aria-pressed="false">Gatherings</button></div><div class="grid">
 <article class="card" data-category="bakery"><div class="photo-wrap"><img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=85" alt="Illustrative image of fresh artisan bread"><span class="tag">BAKERY</span></div><div class="card-body"><h3>FC 247 Bakery</h3><p>Bakery favourites for your everyday table.<details><summary>What to know</summary><p>Product selection and availability should be confirmed in person.</p></details></p><a class="card-link" href="#bakery">Discover the bakery →</a></div></article>
 <article class="card" data-category="food"><div class="photo-wrap"><img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=85" alt="Illustrative image of crispy chicken"><span class="tag">CRISPY CHICKEN</span></div><div class="card-body"><h3>Crispy Chicken</h3><p>A familiar favourite for a satisfying bite.<details><summary>Explore this option</summary><p>Visit the hub to check current options and availability.</p></details></p><a class="card-link" href="#visit">Visit the hub →</a></div></article>
