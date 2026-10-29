@@ -10,8 +10,10 @@ Date: 2026-10-29
 
 ## Implemented in this branch
 - Simplified the homepage copy and visual hierarchy while retaining the existing single-page static structure.
-- Added social-sharing title and description metadata. A canonical URL and social image are intentionally omitted until the production domain and official logo asset are available.
+- Added social-sharing title and description metadata. The social image reference points to the intended official logo JPEG path; it will not resolve until that image is uploaded. A canonical URL is omitted until the production domain is confirmed.
 - Preserved the accessible category filter and its live status announcement.
+- Added eight keyboard-accessible native expandable detail panels so visitors can engage with each category without leaving the page.
+- Prepared header/footer, favicon and social-preview references to the official JPEG path; these are intentionally launch-blocking until the binary image is uploaded.
 - Added visible focus states, reduced-motion support, lazy loading on below-the-fold images, and mobile sticky actions.
 - Updated the Google Maps link to use the directions endpoint and the supplied Kaduna destination address.
 - Corrected the location copy to use the exact supplied address and postal code: No. 10 Rahma Road, Off Nnamdi Azikiwe Expressway (Western Bypass), Kaduna, Kaduna State, Nigeria, 800283.
@@ -22,12 +24,11 @@ Date: 2026-10-29
 The revised homepage, JSON-LD LocalBusiness address, and all displayed location copy refer only to Kaduna, Kaduna State, Nigeria. The address is consistent across the page. A complete repository-wide code search of every branch and a production crawl have not been completed, so this is not a claim that every historic file or deployed artifact has been cleared.
 
 ## Required before public launch
-1. Add the original supplied JPEG unchanged at `assets/first-class-logo.jpeg`. It is not committed in this branch yet; do not substitute the existing SVG.
-2. Integrate the actual JPEG into header/footer and create favicon/social-preview derivatives only as needed while preserving the original source.
-3. Confirm the intended Vercel project. The available project is named `first-class-hub-kano`, which conflicts with the Kaduna-only brief. Do not deploy to it without explicit project confirmation.
-4. Confirm the production domain before setting canonical metadata.
-5. Run a browser-based mobile/desktop visual review, test all remote image URLs and directions links, and verify the deployed source commit before publishing.
-6. Replace illustrative stock photos with approved business photos when available.
+1. Upload the exact supplied JPEG unchanged at `assets/first-class-logo.jpeg`. The page now references this path but the image is not in the repository, so logo references currently do not resolve. Do not substitute the existing SVG.
+2. Confirm the intended Vercel project. The available project is named `first-class-hub-kano`, which conflicts with the Kaduna-only brief. Do not deploy to it without explicit project confirmation.
+3. Confirm the production domain before setting canonical metadata.
+4. Run a browser-based mobile/desktop visual review, test all remote image URLs and directions links, and verify the deployed source commit before publishing.
+5. Replace illustrative stock photos with approved business photos when available.
 
 ## Test status
-No local browser, HTML validator, automated accessibility suite, or production deployment test was available through the connected GitHub write workflow. The current changes are committed to a feature branch but are not represented as tested or deployed.
+Source-level checks only. The new category filter and expandable panels are present in the HTML/JavaScript; browser-based interaction, mobile/desktop rendering, external image loading, automated accessibility, and production deployment have not been tested. The official logo image is missing, so the branch must not be deployed as launch-ready.
