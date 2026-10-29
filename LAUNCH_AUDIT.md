@@ -10,7 +10,7 @@ Date: 2026-10-29
 
 ## Implemented in this branch
 - Simplified the homepage copy and visual hierarchy while retaining the existing single-page static structure.
-- Added social-sharing title and description metadata. The social image reference points to the intended official logo JPEG path; it will not resolve until that image is uploaded. A canonical URL is omitted until the production domain is confirmed.
+- Added search-engine directives (`index, follow`), richer Open Graph and Twitter card metadata, and a `robots.txt` that allows crawling. The social image reference points to the intended official logo JPEG path; it will not resolve until that image is uploaded. Canonical URL and sitemap are omitted until the production domain is confirmed.
 - Preserved the accessible category filter and its live status announcement.
 - Added eight keyboard-accessible native expandable detail panels so visitors can engage with each category without leaving the page.
 - Prepared header/footer, favicon and social-preview references to the official JPEG path; these are intentionally launch-blocking until the binary image is uploaded.
@@ -25,10 +25,10 @@ The revised homepage, JSON-LD LocalBusiness address, and all displayed location 
 
 ## Required before public launch
 1. Upload the exact supplied JPEG unchanged at `assets/first-class-logo.jpeg`. The page now references this path but the image is not in the repository, so logo references currently do not resolve. Do not substitute the existing SVG.
-2. Confirm the intended Vercel project. The available project is named `first-class-hub-kano`, which conflicts with the Kaduna-only brief. Do not deploy to it without explicit project confirmation.
-3. Confirm the production domain before setting canonical metadata.
+2. Confirm or create the correct Kaduna Vercel project with access; current project lookup was denied/not found. Do not deploy to the `first-class-hub-kano` project without confirming ownership and intent.
+3. Confirm the production domain, then set canonical metadata, absolute Open Graph/Twitter image URLs, and `sitemap.xml` with that verified domain. Submit the sitemap to Google Search Console and Bing Webmaster Tools.
 4. Run a browser-based mobile/desktop visual review, test all remote image URLs and directions links, and verify the deployed source commit before publishing.
 5. Replace illustrative stock photos with approved business photos when available.
 
 ## Test status
-Source-level checks only. The new category filter and expandable panels are present in the HTML/JavaScript; browser-based interaction, mobile/desktop rendering, external image loading, automated accessibility, and production deployment have not been tested. The official logo image is missing, so the branch must not be deployed as launch-ready.
+Source-level checks only. Category filters and expandable panels are present; browser-based interaction, mobile/desktop rendering, external image loading, automated accessibility, and production deployment have not been tested. `robots.txt` allows crawling. The official logo is missing and Vercel access/domain remain unresolved, so the branch must not be deployed as launch-ready.
