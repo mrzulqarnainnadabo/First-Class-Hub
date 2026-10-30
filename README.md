@@ -1,23 +1,41 @@
 # First Class Hub
 
-Responsive, mobile-first static website for First Class Hub in Kaduna, Nigeria, with a black-and-gold visual direction.
+Professional public website for **First Class Hub**, Kaduna, Nigeria.
 
-## Project
-- `index.html` — responsive homepage, category filters, service details, address and Google Maps directions.
-- `robots.txt` — crawler directives.
-- Static deployment; no build command or package manager is required.
+## Location (only)
 
-## Confirmed business location
-No. 10 Rahma Road, Off Nnamdi Azikiwe Expressway (Western Bypass), Kaduna, Kaduna State, Nigeria, Postal Code 800283.
+No. 10 Rahma Road  
+Off Nnamdi Azikiwe Expressway (Western Bypass)  
+Kaduna, Kaduna State, Nigeria  
+Postal Code: **800283**
 
-## Local development
-Open `index.html` in a browser or serve the repository root with any static file server.
+Do not list Kano or any other city as a business location.
 
-## Release checks
-- The page references the supplied official logo at `assets/first-class-logo.jpeg`. The original image must be uploaded unchanged to that path; do not substitute the existing SVG approximation.
-- The production deployment previously inspected was serving a stale, unrelated page rather than this repository's root `index.html`. Verify Vercel's connected Git repository and project root before treating a release as live.
-- Product and hero imagery are illustrative stock images, not verified photographs of the actual premises or inventory.
-- Opening hours, telephone, pricing, reviews and booking functionality are not claimed because verified details were not supplied.
-- Confirm the final deployment content and location details before public launch.
+## Brand
 
-See [LAUNCH_AUDIT.md](./LAUNCH_AUDIT.md) for current status and acceptance checks.
+- Official logo artwork is embedded in `index.html` (header/footer) from the supplied 1ST CLASS crest JPEG.
+- `logo.svg` remains available for favicon / lightweight social fallback.
+- Brand system: black, cream, restrained gold.
+
+## Stack
+
+Static site: `index.html` + `logo.svg` + `robots.txt`
+
+Deploy on **Vercel** (static / no build).
+
+## Domain note
+
+Current default Vercel host may still contain `kano` in the subdomain string. That is a **project hostname**, not business copy.
+
+Recommended next step (manual, needs your approval):
+1. Vercel → Project Settings → Domains
+2. Add a clean host such as `first-class-hub.vercel.app` or a custom domain (`firstclasshub.ng` if available)
+3. Keep the old host as redirect until DNS is verified
+
+## Local preview
+
+Open `index.html` in a browser, or:
+
+```bash
+npx serve .
+```
